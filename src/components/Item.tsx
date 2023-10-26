@@ -1,7 +1,7 @@
-// const Item = ({name: string, quantity: number, description: string}) => {
-//     return <>
-//     <div>
-//         <h2>{name}</h2>
-//     </div>
-//     </>
-// }
+import ItemModel from "../models/ItemModel";
+
+const Item : React.FC <{itemData: ItemModel}> = (props) => {
+    return <div>{props.itemData.name}</div>
+}
+
+export default Item;
