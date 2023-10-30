@@ -8,6 +8,7 @@ class ItemModel{
     public addedBy: User;
     public checkedOut: boolean = false;
     public checkedOutBy: User | undefined;
+    public isCompleted: boolean = false
 
     constructor(adder : User){
         this.addedBy = adder;

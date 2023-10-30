@@ -8,11 +8,18 @@ function App() {
   user.name = "user.name"
   let item1 = new ItemModel(user);
   let item2 = new ItemModel(user);
+  let item3 = new ItemModel(user);
 
   item1.name = "Item 1"
+  item1.description = "A random item."
   item2.name = "Item 2"
+  item2.quantity = 2;
 
-  let items = [item1, item2]
+  item3.name = "item 3";
+  item3.quantity = 6;
+  item3.checkedOut = true;
+
+  let items = [item1, item2, item3]
   return (
     <div>
       <h1>Ghatak's shopping list</h1>

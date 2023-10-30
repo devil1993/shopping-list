@@ -1,7 +1,6 @@
 import User from "./User"
 import {v4} from "uuid"
 
-
 describe("User model", () => {
     it("should preserve Id if passed in the ctor",() => {
         let userId = "user.id"
