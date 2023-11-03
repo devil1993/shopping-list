@@ -2,6 +2,7 @@ import React from 'react';
 import User from './models/User';
 import ItemModel from './models/ItemModel';
 import ItemList from './components/ItemList';
+import NewItem from './components/NewItem';
 
 function App() {
   let user = new User();
@@ -24,6 +25,7 @@ function App() {
     <div>
       <h1>Ghatak's shopping list</h1>
       <ItemList items={items} />
+      <NewItem onItemCreated={(item: ItemModel) => { console.log(item)} } />
     </div>
   );
 }
